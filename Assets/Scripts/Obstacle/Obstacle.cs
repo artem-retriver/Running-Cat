@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Animation animation;
+
+    private void Start()
     {
-        
+        animation.GetComponent<Animation>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.TryGetComponent(out PlayerController pl))
+        {
+            animation.Play();
+        }
     }
 }

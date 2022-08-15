@@ -8,7 +8,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameManager _gameManager;
     private Animator anim;
     private MoveController moveController;
-    //public event Action OnDied;
+    public AudioSource sourceFishBone;
+    public AudioSource sourceSmash;
 
     private bool isAlive = false;
     
@@ -60,12 +61,14 @@ public class PlayerController : MonoBehaviour
     {
         if(other.TryGetComponent(out Fish fish))
         {
+            sourceFishBone.Play();
             _gameManager.IncreaseCoins();
             other.gameObject.SetActive(false);
         }
 
         if(other.TryGetComponent(out Obstacle obstacle))
         {
+            sourceSmash.Play();
             Died();
             StartCoroutine(WaitLoseCoroutine());
         }

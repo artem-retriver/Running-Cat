@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 589657949868296512}
   m_LocalRotation: {x: -0.18763842, y: -0, z: -0, w: 0.9822382}
-  m_LocalPosition: {x: -1.25, y: 2.47, z: 4.58}
+  m_LocalPosition: {x: -1.25, y: 2.4, z: 4.58}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 589657951257472181}
@@ -25160,8 +25160,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacles:
   - {fileID: 7944304888881670548, guid: 7978cfc219d382a4681992fd8658c6a9, type: 3}
-  - {fileID: 4103893737315342626, guid: 4f6b99dc2a876054fa9281b6b15e5d51, type: 3}
-  - {fileID: 8358436353263096755, guid: 761236c522ddea647bf3b0ec4b15d37b, type: 3}
+  - {fileID: 5791146415007997728, guid: 4f6b99dc2a876054fa9281b6b15e5d51, type: 3}
+  - {fileID: 676454872507201662, guid: 761236c522ddea647bf3b0ec4b15d37b, type: 3}
   - {fileID: 8043996359074280763, guid: 44a3d4a0650241d4198d7ffaaf044789, type: 3}
   numberOfObstacles: {x: 20, y: 30}
   coin: {fileID: 4078411987454927013, guid: 4846adb1fe6b9114780f10c238267c60, type: 3}
@@ -50061,8 +50061,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacles:
   - {fileID: 7944304888881670548, guid: 7978cfc219d382a4681992fd8658c6a9, type: 3}
-  - {fileID: 4103893737315342626, guid: 4f6b99dc2a876054fa9281b6b15e5d51, type: 3}
-  - {fileID: 8358436353263096755, guid: 761236c522ddea647bf3b0ec4b15d37b, type: 3}
+  - {fileID: 5791146415007997728, guid: 4f6b99dc2a876054fa9281b6b15e5d51, type: 3}
+  - {fileID: 676454872507201662, guid: 761236c522ddea647bf3b0ec4b15d37b, type: 3}
   - {fileID: 8043996359074280763, guid: 44a3d4a0650241d4198d7ffaaf044789, type: 3}
   numberOfObstacles: {x: 20, y: 30}
   coin: {fileID: 4078411987454927013, guid: 4846adb1fe6b9114780f10c238267c60, type: 3}
