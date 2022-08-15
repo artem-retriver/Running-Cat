@@ -5,6 +5,7 @@ using System;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("Manager:")]
     [SerializeField] private GameManager _gameManager;
     private Animator anim;
     private MoveController moveController;
@@ -12,7 +13,6 @@ public class PlayerController : MonoBehaviour
     public AudioSource sourceSmash;
 
     private bool isAlive = false;
-    
 
     private void Start()
     {
@@ -28,7 +28,6 @@ public class PlayerController : MonoBehaviour
         {
             moveController.InputHandler();
             moveController.Movebale();
-            
         }
         else  
             return;

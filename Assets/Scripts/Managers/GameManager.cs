@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     [Header("Levels:")]
     [SerializeField] private Level level;
     private Level levels;
+    [Header("Texts:")]
     [SerializeField] private TextMeshProUGUI coinText;
     [SerializeField] private TextMeshProUGUI coinsBestTextMenu;
     [SerializeField] private TextMeshProUGUI coinsBestTextLose;
@@ -56,7 +57,6 @@ public class GameManager : MonoBehaviour
     {
         levels = Instantiate(level);
         levels.Initialize(this);
-
     }
 
     public void DestroyLevel()

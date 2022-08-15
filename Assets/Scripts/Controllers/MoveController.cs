@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class MoveController : MonoBehaviour
 {
+    [Header("Setting")]
     [SerializeField] private int speed;
     [SerializeField] private int laneSpeed;
     [SerializeField] private float jumpLenght;
@@ -28,7 +29,6 @@ public class MoveController : MonoBehaviour
         anim = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider>();
         boxColliderSize = boxCollider.size;
-        
     }
 
     public void InputHandler()

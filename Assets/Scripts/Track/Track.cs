@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class Track : MonoBehaviour
 {
+    [Header("Paste Objects:")]
     [SerializeField] public GameObject[] obstacles;
     [SerializeField] public Vector2 numberOfObstacles;
     [SerializeField] public GameObject coin;
     [SerializeField] public Vector2 numberOfCoins;
 
+    [Header("New ogjects:")]
     public List<GameObject> newObstacles;
     public List<GameObject> newCoins;
 

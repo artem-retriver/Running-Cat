@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class UIManager : MonoBehaviour
 {
+    [Header("Screen:")]
     [SerializeField] private GameObject menuScreen;
     [SerializeField] private GameObject gameScreen;
     [SerializeField] private GameObject loseScreen;
@@ -43,6 +43,18 @@ public class UIManager : MonoBehaviour
         _currentScreen.SetActive(false);
         pauseScreen.SetActive(true);
         _currentScreen = pauseScreen;
+    }
+
+    public void Resume()
+    {
+        pauseScreen.SetActive(false);
+        Time.timeScale = 1f;
+    }
+
+    public void Pause()
+    {
+        pauseScreen.SetActive(true);
+        Time.timeScale = 0f;
     }
 }
 
