@@ -33,19 +33,19 @@ public class MoveController : MonoBehaviour
 
     public void InputHandler()
     {
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (SwipeController.swipeLeft)
         {
             ChangeLane(-1);
         }
-        else if (Input.GetKeyDown(KeyCode.RightArrow))
+        else if (SwipeController.swipeRight)
         {
             ChangeLane(1);
         }
-        else if (Input.GetKeyDown(KeyCode.UpArrow))
+        else if (SwipeController.swipeUp)
         {
             Jump();
         }
-        else if (Input.GetKeyDown(KeyCode.DownArrow))
+        else if (SwipeController.swipeDown)
         {
             Slide();
         }

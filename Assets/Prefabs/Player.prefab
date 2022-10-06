@@ -1052,6 +1052,7 @@ GameObject:
   - component: {fileID: 7802720936292668010}
   - component: {fileID: 7802720936292668004}
   - component: {fileID: 7802720936292668000}
+  - component: {fileID: 6832609976236083687}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1157,6 +1158,18 @@ MonoBehaviour:
   _gameManager: {fileID: 0}
   sourceFishBone: {fileID: 6619912734165895734}
   sourceSmash: {fileID: 6631161226482433882}
+--- !u!114 &6832609976236083687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7802720936292668003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 127607d79ff32d944ad72c3429eba977, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7802720936292668353
 GameObject:
   m_ObjectHideFlags: 0
